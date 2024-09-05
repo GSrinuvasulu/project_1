@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .success-container {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            animation: rotateIn 1s ease-out forwards, scaleBounce 0.6s ease-out 1s forwards;
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: #28a745;
+            margin-bottom: 20px;
+            animation: pulseGlow 1.5s infinite;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 15px;
+            animation: textRotateIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            animation: textRotateIn 1.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* Animations */
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-360deg) scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleBounce {
+            0% {
+                transform: scale(1);
+            }
+            70% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 0 30px blue;
+            }
+            50% {
+                box-shadow: 0 0 30px #28a745;
+            }
+        }
+
+        @keyframes textRotateIn {
+            from {
+                transform: rotate(-360deg) translateX(-200px);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0deg) translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">&#10004;</div>
+        <h1>Order Successful!</h1>
+        <p>Your order is ready to be delivered.</p>
+   
+        <a href="code.html"><img src="https://e7.pngegg.com/pngimages/792/511/png-clipart-blue-and-white-house-symbol-button-home-automation-kits-computer-icons-browse-and-house-s-blue-angle-thumbnail.png" width="50px"></a>
+    </div>
+    
+</body>
+</html>

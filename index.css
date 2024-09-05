@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    font-size: 2rem;
+}
+button{
+    padding: 15px;
+    font-size: 2rem;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+option{
+    font-size: 2rem;
+}
+select{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
